@@ -1,0 +1,79 @@
+package television;
+import java.util.*;
+public class TelevisionMain {
+
+	public static void main(String[] args) {
+		Television television=new Television();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("DO you want to switch on the television");
+		String currentState=sc.nextLine();
+		television.setCurrentState(currentState);
+		if( currentState.equals("yes"))
+		{
+			System.out.println("tv is switched on");
+		}
+		else
+		{
+			System.exit(0);
+		}
+		
+		System.out.println("enter the current channel");
+		int currentChannel=sc.nextInt();
+		television.setCurentChannel(currentChannel);
+		
+		System.out.println("enter the current volume");
+		int currentVolume=sc.nextInt();
+		television.setCurrentVolume(currentVolume);
+		
+		System.out.println("Do you want to increase the volume");
+		String ansincreasevol=sc.next();
+		if(ansincreasevol.equals("yes"))
+		{
+			System.out.println("enter the volume to be increased");
+			int increasevol=sc.nextInt();
+			television.increaseVolume(increasevol);
+			System.out.println("thecurrent volume is"+television.getCurrentVloume());
+		}
+		else if(ansincreasevol.equals("no"))
+		{
+			System.out.println("thecurrent volume remains same"+television.getCurrentVloume());
+		}
+		
+		System.out.println("Do you want to decrease the volume");
+		String ansdecreasevol=sc.next();
+		if(ansdecreasevol.equals("yes"))
+		{
+			System.out.println("enter the volume to be decreased");
+			int decreasevol=sc.nextInt();
+			television.decreaseVolume(decreasevol);
+			System.out.println("thecurrent volume is"+television.getCurrentVloume());
+		}
+		else if(ansdecreasevol.equals("no"))
+		{
+			System.out.println("thecurrent volume remains same"+television.getCurrentVloume());
+		}
+
+		System.out.println("Do you want to chnage channel");
+		String anschangechannel=sc.next();
+		if(anschangechannel.equals("yes"))
+		{
+			System.out.println("enter the channel number");
+			int changechannel=sc.nextInt();
+			television.changeChannel(changechannel);
+			System.out.println("the new channel is"+television.getCurentChannel());
+		}
+		else if(anschangechannel.equals("no"))
+		{
+			System.out.println("the channel remains same"+television.getCurentChannel());
+		}
+		System.out.println("Do you want to switchoff the tv");
+		String ansswitch=sc.next();
+		if(ansswitch.equals("yes"))
+		{
+			System.out.println("the tv is switched off");
+			System.exit(0);
+		}
+		
+	}
+
+}
