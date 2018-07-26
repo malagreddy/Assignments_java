@@ -10,9 +10,9 @@ public class TestClass {
 		int imaginary1=sc.nextInt();
 		ComplexNumber cnumber=new ComplexNumber(real, imaginary);
 		ComplexNumber cnumber1=new ComplexNumber( real1, imaginary1);
-		cnumber.display();
+		cnumber.display(); //call display function
 		cnumber1.display();
-		ComplexNumber cnum=new ComplexNumber();
+		ComplexNumber cnum=new ComplexNumber();//creation of object 
 		cnum.sum(cnumber,cnumber1);
 	}
 
