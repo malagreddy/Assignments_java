@@ -1,7 +1,7 @@
 package time;
 
 public class TimeClass {
-	int hours;
+	int hours;	//instance members
 	int minutes;
 	public TimeClass(int hours,int minutes)
 	{
@@ -30,6 +30,7 @@ public class TimeClass {
 	{
 		System.out.println(hours+"hours"+minutes+"minutes");
 	}
+	//sum function which gives total hours and minutes and calls display function
 	public void sum(TimeClass t1,TimeClass t2)
 	{
 		hours=t1.hours+t2.hours;
