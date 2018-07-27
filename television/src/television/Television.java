@@ -1,7 +1,7 @@
 package television;
 
 public class Television {
-	private int currentChannel;
+	private int currentChannel;	//instance members
 	private int currentVolume;
 	private String currentState;
 	
@@ -24,19 +24,20 @@ public class Television {
 		this.currentState = currentState;
 	}
 	public int increaseVolume(int increaseVolume){
-		currentVolume=currentVolume+increaseVolume;
+		currentVolume=currentVolume+increaseVolume; //increase the volume
 		return increaseVolume;
 	}
 	public int decreaseVolume(int decreaseVolume)
 	{
-		currentVolume=currentVolume-decreaseVolume;
+		currentVolume=currentVolume-decreaseVolume; //decrease the volume
 		return decreaseVolume;
 	}
 	public int changeChannel(int changeChannel)
 	{
-		currentChannel=changeChannel;
+		currentChannel=changeChannel; //change channel from current channel
 		return changeChannel;
 	}
+	//to change the state of a tv
 	public void changeState(String state)
 	{
 		currentState=state;
