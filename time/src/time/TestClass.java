@@ -1,3 +1,4 @@
+//program to calculate sum of two time objects and return time 
 package time;
 import java.util.Scanner;
 public class TestClass {
@@ -9,11 +10,11 @@ public class TestClass {
 		int minutes=sc.nextInt();
 		int hours1=sc.nextInt();
 		int minutes1=sc.nextInt();
-		TimeClass time1=new TimeClass(hours,minutes);
+		TimeClass time1=new TimeClass(hours,minutes);//creating objects of TimeClass
 		TimeClass time2=new TimeClass(hours1,minutes1);
 		time1.display();
 		time2.display();
-		TimeClass obj=new TimeClass();
+		TimeClass obj=new TimeClass();//third object of timeClass
 		obj.sum(time1,time2);
 	}
 
