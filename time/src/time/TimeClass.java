@@ -33,7 +33,7 @@ public class TimeClass {
 	//sum function which gives total hours and minutes and calls display function
 	public void sum(TimeClass t1,TimeClass t2)
 	{
-		hours=t1.hours+t2.hours;
+		hours=t1.hours+t2.hours;	//sum of two time objects 
 		minutes=t1.minutes+t2.minutes;
 		display();
 	}
